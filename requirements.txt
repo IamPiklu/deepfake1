@@ -1,9 +1,9 @@
-gradio
-Pillow
-facenet-pytorch
-torch
-opencv-python
-grad-cam
-transformers
 fastapi
 uvicorn
+transformers
+pillow
+torch
+facenet-pytorch
+numpy
+opencv-python
+pytorch-grad-cam
