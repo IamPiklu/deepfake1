@@ -3,8 +3,6 @@ uvicorn
 transformers
 pillow
 torch
-gradio
 facenet-pytorch
 numpy
 opencv-python
-pytorch-grad-cam
