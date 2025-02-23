@@ -9,10 +9,10 @@ from fastapi.responses import JSONResponse
 from PIL import Image
 from transformers import pipeline
 
-# Optionally extract examples.zip if needed.
-if os.path.exists("examples.zip"):
-    with zipfile.ZipFile("examples.zip", "r") as zip_ref:
-        zip_ref.extractall(".")
+# # Optionally extract examples.zip if needed.
+# if os.path.exists("examples.zip"):
+#     with zipfile.ZipFile("examples.zip", "r") as zip_ref:
+#         zip_ref.extractall(".")
 
 # Initialize the deepfake detection pipeline.
 pipe = pipeline(model="not-lain/deepfake", trust_remote_code=True)
