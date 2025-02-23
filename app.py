@@ -15,7 +15,7 @@ from transformers import pipeline
 #         zip_ref.extractall(".")
 
 # Initialize the deepfake detection pipeline.
-pipe = pipeline(model="not-lain/deepfake", trust_remote_code=True)
+pipe = pipeline(model="./deepfake", trust_remote_code=True)
 
 app = FastAPI(title="Deepfake Detection API")
 
@@ -62,6 +62,6 @@ async def predict(file: UploadFile = File(...), true_label: str = Form(...)):
         "face_with_explainability": img_base64
     }
 
-# if __name__ == "__main__":
-#     import uvicorn
-#     uvicorn.run(app, host="0.0.0.0", port=8000)
+if __name__ == "__main__":
+    import uvicorn
+    uvicorn.run(app, host="0.0.0.0", port=8000)
